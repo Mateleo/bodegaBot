@@ -28,10 +28,10 @@ export class UserCommand extends Command {
 		if (!role) {
 			return interaction.reply({ content: "Ce role n'a pas été trouvé!", ephemeral: true });
 		}
-		if (roleId == '1159514743862734880') {
-			interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.remove('1159514701126975639');
+		if (roleId == '893457059352289310') {
+			interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.remove('893456850069123092');
 		} else {
-			interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.remove('1159514743862734880');
+			interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.remove('893457059352289310');
 		}
 		interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.add(role);
 		return interaction.reply({ content: `${roleId == '1159514743862734880' ? '💙' : '💔'}`, ephemeral: true });
