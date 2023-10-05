@@ -14,9 +14,9 @@ export class UserCommand extends Command {
 					return option.setRequired(true).setName('couleur').setDescription('💙 ou 💔').addChoices(
 						{
 							name: 'Bracelet Bleu 💙',
-							value: '1159514743862734880'
+							value: '893457059352289310'
 						},
-						{ name: 'Bracelet Rouge 💔', value: '1159514701126975639' }
+						{ name: 'Bracelet Rouge 💔', value: '893456850069123092' }
 					);
 				})
 		);
