@@ -1,5 +1,5 @@
 import './lib/setup';
-import { LogLevel, SapphireClient } from '@sapphire/framework';
+import { ApplicationCommandRegistries, LogLevel, RegisterBehavior, SapphireClient } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
 
 const client = new SapphireClient({
@@ -11,6 +11,8 @@ const client = new SapphireClient({
 	intents: [GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMessages, GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent],
 	loadMessageCommandListeners: true
 });
+
+ApplicationCommandRegistries.setDefaultBehaviorWhenNotIdentical(RegisterBehavior.BulkOverwrite);
 
 const main = async () => {
 	try {
