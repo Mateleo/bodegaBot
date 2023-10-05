@@ -34,6 +34,6 @@ export class UserCommand extends Command {
 			interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.remove('893457059352289310');
 		}
 		interaction.guild?.members.cache.get(interaction.member!.user.id)?.roles.add(role);
-		return interaction.reply({ content: `${roleId == '1159514743862734880' ? '💙' : '💔'}`, ephemeral: true });
+		return interaction.reply({ content: `${roleId == '893457059352289310' ? '💙' : '💔'}`, ephemeral: true });
 	}
 }
